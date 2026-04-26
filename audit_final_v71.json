@@ -1,0 +1,65 @@
+{
+  "version": "V71 esperienza guidata completa",
+  "html_files": 257,
+  "css_files": 2,
+  "js_files": 4,
+  "search_index_entries": 257,
+  "new_pages_per_language": [
+    "inizia-da-qui.html",
+    "mappa-percorsi.html",
+    "metodo-di-studio.html",
+    "glossario.html",
+    "ricerca.html",
+    "archivio-vivente.html"
+  ],
+  "languages": [
+    "it",
+    "en",
+    "fr",
+    "es",
+    "de",
+    "nl",
+    "hu"
+  ],
+  "local_missing_assets_or_links": 0,
+  "duplicate_ids": 0,
+  "css_balanced": true,
+  "js_syntax_ok": true,
+  "book_webp_generated": 31,
+  "book_image_src_updated": 253,
+  "video": {
+    "hero-background.mp4": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 960,
+          "height": 540
+        }
+      ],
+      "format": {
+        "duration": "16.000000",
+        "size": "2457102"
+      }
+    },
+    "hero-background.webm": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "vp9",
+          "width": 960,
+          "height": 540
+        }
+      ],
+      "format": {
+        "duration": "16.000000",
+        "size": "2089783"
+      }
+    }
+  },
+  "notes": [
+    "Headless Chromium visual QA could not be completed in this environment because the local browser target closed during initialization; static link/CSS/JS audits completed successfully."
+  ]
+}

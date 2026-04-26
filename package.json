@@ -1,0 +1,19 @@
+{
+  "name": "academy-mra-static",
+  "version": "81.0.0",
+  "private": true,
+  "scripts": {
+    "serve": "python3 -m http.server 8080",
+    "check": "python3 tools/quality-check.py",
+    "sitemap": "python3 tools/generate-sitemap.py",
+    "images:webp": "python3 tools/create-responsive-images.py",
+    "minify": "node tools/minify-site.mjs",
+    "build": "npm run sitemap && npm run minify",
+    "audit:mobile": "echo 'Apri http://localhost:8080 e lancia Lighthouse mobile da Chrome DevTools'"
+  },
+  "devDependencies": {
+    "clean-css": "^5.3.3",
+    "html-minifier-terser": "^7.2.0",
+    "terser": "^5.31.6"
+  }
+}

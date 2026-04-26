@@ -1,0 +1,65 @@
+/* Academy MRA - professional optimization layer */
+
+/* A11y: high-visibility focus and no invisible focus traps. */
+:root{--mra-focus-visible:#f0c040;--mra-focus-shadow:rgba(240,192,64,.38)}
+:where(a,button,input,textarea,select,summary,[tabindex]):focus-visible{
+  outline:3px solid var(--mra-focus-visible) !important;
+  outline-offset:4px !important;
+  box-shadow:0 0 0 7px var(--mra-focus-shadow) !important;
+}
+
+/* Performance: static poster fallback when data, motion or device constraints ask for it. */
+.hero-video-wrap--poster,
+.is-media-reduced .hero-video-wrap{
+  background:#f4efdf url('../images/hero-poster.webp') center/cover no-repeat;
+}
+.is-media-reduced .hero-video,
+.is-media-reduced canvas#particles,
+.is-media-reduced .aurora,
+.is-media-reduced .rings{
+  display:none !important;
+  visibility:hidden !important;
+}
+html[data-performance-tier="low"] canvas#particles{opacity:.08 !important}
+
+/* Cookie banner: normal text contrast >= WCAG AA target. */
+.cookie-banner,
+.cookie-banner .meta,
+.cookie-banner p{
+  color:#221a0b !important;
+}
+.cookie-banner{
+  background:rgba(255,255,255,.98) !important;
+  border-color:rgba(34,26,11,.22) !important;
+}
+
+/* Forms: reusable error semantics for future forms. */
+.field-error[aria-live]{font-weight:700}
+input[aria-invalid="true"],
+textarea[aria-invalid="true"],
+select[aria-invalid="true"]{
+  border-color:#8a2424 !important;
+  background:#fffafa !important;
+}
+
+/* Responsive images created by the optimizer. */
+picture.mra-picture{display:contents}
+img[loading="lazy"]{content-visibility:auto}
+
+/* Utility classes replacing formerly inline styles. */
+.u-mt-0{margin-top:0 !important}
+.u-mt-12{margin-top:12px !important}
+.u-mt-16{margin-top:16px !important}
+.u-mt-18{margin-top:18px !important}
+.u-mb-22{margin-bottom:22px !important}
+.u-mb-28{margin-bottom:28px !important}
+.u-flex-start-mt-18{justify-content:flex-start !important;margin-top:18px !important}
+.u-legal-card-inline{padding:28px !important;width:min(980px,92vw) !important;margin:0 auto !important}
+.u-fullscreen-center{min-height:100vh !important;display:grid !important;place-items:center !important;padding:48px 20px !important}
+.u-centered-720{max-width:720px !important;text-align:center !important}
+.u-muted-on-dark{color:rgba(244,234,212,.75) !important}
+.u-light-text{color:#f7efdf !important}
+.u-block-mb-6{display:block !important;margin-bottom:6px !important}
+.u-margin-0{margin:0 !important}
+.u-eyebrow-pill-inline{display:inline-block !important;margin-bottom:10px !important;padding:6px 10px !important;border:1px solid rgba(243,214,93,.16) !important;border-radius:999px !important;font-size:11px !important;letter-spacing:.14em !important;text-transform:uppercase !important;color:rgba(243,214,93,.86) !important}
+.u-fluid-heading-inline{font-size:clamp(28px,4vw,46px) !important}
